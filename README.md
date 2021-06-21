@@ -1,2 +1,2 @@
 # bomtchauLp
-Landing page projeto integrador
+Landing page projeto integrador (incompleto)
