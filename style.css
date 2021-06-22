@@ -197,3 +197,66 @@ header ul li a:hover {
     width: 400px;
     margin: 50px auto;
 }
+
+.precos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corbg1);
+}
+
+.precos h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+}
+
+.precos h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--cortexto);
+    margin: 20px 40px;
+}
+
+.botao {
+    width: 200px;
+    height: 60px;
+    background-color: var(--corbg1);
+    margin: 0 0 30px;
+    border-radius: 20px;
+}
+
+.botao:hover {
+    border: solid var(--cortexto) 1px;
+}
+
+.botao a {
+    color: var(--cortexto);
+    text-decoration: none;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 0;
+}
+
+.planos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 350px;
+    height: 720px;
+    background-color: var(--corbg2);
+    border-radius: 20px;
+    margin: 50px 40px;
+}
+
+.circulo-img {
+    display: flex;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-color: var(--corbg1);
+}
