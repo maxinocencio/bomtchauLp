@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --cortitulo: #000;
+    --cortexto: #474747;
+    --cortexto2: #4c585e;
+    --corbg1: #fff;
+    --corbg2: #EFF0F6;
+    --corbg3: #aad6ff;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    background-color: var(--corbg2);
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 40px 0 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--corbg2);
+    height: 100px;
+}
+
+img {
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+header ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a {
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    color: var(--cortexto);
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    color: var(--cortexto2);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.block1 {
+    display: flex;
+    width: 1150px;
+    background-color: var(--corbg2);
+    flex-direction: column;
+    margin: 60px;
+    justify-content: center;
+}
+
+.block1 h1 {
+    display: flex;
+    text-align: left;
+    font-family: 'Dela Gothic One', cursive;
+    margin-right: 200px;
+    font-size: 40px;
+    color: var(--cortitulo);
+}
+
+.block1 h3 {
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-right: 150px;
+    font-size: 20px;
+    color: var(--cortexto);
+}
+
+.block2 {
+    display: flex;
+    width: 770px;
+    background-color: var(--corbg3);
+    background-image: url("assets/kids.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corbg1);
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.content-about {
+    width: 700px;
+    height: auto;
+    background-color: var(--corbg2);
+    margin: 80px auto;
+    border-radius: 20px;
+}
+
+.quem-somos {
+    margin: 50px;
+}
+
+.content-about h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: var(--cortitulo);
+}
+
+.imagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagens img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.content-about h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--cortexto);
+}
+
+.produtos {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--corbg2);
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.bomtchau {
+    width: 700px;
+    height: auto;
+    background-color: var(--corbg1);
+    margin: 80px auto;
+    border-radius: 20px;
+}
+
+.textbox {
+    margin: 50px;
+}
+
+.textbox h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: var(--cortitulo);
+}
+
+.textbox h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--cortexto);
+}
+
+.img img {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.precos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corbg1);
+}
+
+.precos h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+}
+
+.precos h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--cortexto);
+    margin: 20px 40px;
+}
+
+.botao {
+    width: 200px;
+    height: 60px;
+    background-color: var(--corbg1);
+    margin: 0 0 30px;
+    border-radius: 20px;
+}
+
+.botao:hover {
+    border: solid var(--cortexto) 1px;
+}
+
+.botao a {
+    color: var(--cortexto);
+    text-decoration: none;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 0;
+}
+
+.planos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 350px;
+    height: 720px;
+    background-color: var(--corbg2);
+    border-radius: 20px;
+    margin: 50px 40px;
+}
+
+.circulo-img {
+    display: flex;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-color: var(--corbg1);
+}
