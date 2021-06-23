@@ -22,10 +22,11 @@ main {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 40px 0 40px;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--corbg2);
     height: 100px;
@@ -35,12 +36,14 @@ img {
     display: flex;
     width: 100px;
     align-items: center;
+    margin: 0 40px 0 40px;
 }
 
 header ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 40px 0 40px;
     
 }
 
@@ -68,6 +71,7 @@ header ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     height: 700px;
+    padding-top: 100px;
 }
 
 .inicio {
@@ -117,6 +121,7 @@ header ul li a:hover {
     width: 100%;
     height: auto;
     align-items: center;
+    padding: 100px 0 100px 0;
 }
 
 .content-about {
@@ -164,6 +169,7 @@ header ul li a:hover {
     width: 100%;
     height: auto;
     align-items: center;
+    padding: 100px 0 100px 0;
 }
 
 .bomtchau {
@@ -204,6 +210,7 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
     background-color: var(--corbg1);
+    padding: 100px 0 100px 0;
 }
 
 .precos h1 {
@@ -225,6 +232,9 @@ header ul li a:hover {
     background-color: var(--corbg1);
     margin: 0 0 30px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botao:hover {
@@ -236,9 +246,6 @@ header ul li a:hover {
     text-decoration: none;
     font-family: 'Dela Gothic One', cursive;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 11px 0 0;
 }
 
 .planos {
@@ -259,4 +266,74 @@ header ul li a:hover {
     height: 175px;
     border-radius: 50%;
     background-color: var(--corbg1);
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corbg2);
+    padding: 100px 0 100px 0;
+}
+
+.contato h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+.contato-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 1100px;
+    height: 720px;
+    background-color: var(--corbg1);
+    border-radius: 20px;
+    margin: 50px 40px;
+}
+
+.imagem-contato {
+    width: 550px;
+    height: 720px;
+    background-image: url("assets/contato.jpg");
+    background-size: cover;
+    background-position: 40% 50%;
+    opacity: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.links-contato {
+    width: 550px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    display: inline;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.links img {
+    display: inline;
+    width: 40%;
+    height: 100%;
+    margin: 20px 0;
 }
