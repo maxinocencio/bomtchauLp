@@ -15,10 +15,12 @@ body{
     margin: 0;
     background-color: var(--corbg2);
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 main {
     width: 100%;
+    
 }
 
 header {
@@ -66,7 +68,14 @@ header ul li a:hover {
     color: var(--cortexto2);
 }
 
+section {
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
 .hero {
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -82,6 +91,7 @@ header ul li a:hover {
 .block1 {
     display: flex;
     width: 1150px;
+    height: auto;
     background-color: var(--corbg2);
     flex-direction: column;
     margin: 60px;
@@ -103,29 +113,34 @@ header ul li a:hover {
     margin-right: 150px;
     font-size: 20px;
     color: var(--cortexto);
+    max-height: 175px;
 }
 
 .block2 {
     display: flex;
     width: 770px;
+    height: 700px;
     background-color: var(--corbg3);
     background-image: url("assets/kids.jpg");
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .about-us {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--corbg1);
     width: 100%;
+    min-width: auto;
     height: auto;
     align-items: center;
-    padding: 100px 0 100px 0;
 }
 
 .content-about {
+    display: flex;
     width: 700px;
+    min-width: auto;
     height: auto;
     background-color: var(--corbg2);
     margin: 80px auto;
@@ -155,6 +170,62 @@ header ul li a:hover {
     margin: 0 10px;
 }
 
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.max {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-image: url("assets/max.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+
+.isabel {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-image: url("assets/isabel.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+
+.emili {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-image: url("assets/emili.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+
+.olivia {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-image: url("assets/olivia.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+
+.gustavo {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-image: url("assets/gustavo.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+
 .content-about h3 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -167,13 +238,15 @@ header ul li a:hover {
     flex-direction: row;
     background-color: var(--corbg2);
     width: 100%;
+    min-width: auto;
     height: auto;
     align-items: center;
-    padding: 100px 0 100px 0;
 }
 
 .bomtchau {
+    display: flex;
     width: 700px;
+    min-width: auto;
     height: auto;
     background-color: var(--corbg1);
     margin: 80px auto;
@@ -210,7 +283,8 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
     background-color: var(--corbg1);
-    padding: 100px 0 100px 0;
+    height: auto;
+    width: auto;
 }
 
 .precos h1 {
@@ -269,29 +343,45 @@ header ul li a:hover {
 }
 
 .contato {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: var(--corbg2);
-    padding: 100px 0 100px 0;
+    min-width: auto;
+    height: auto;*/
+
+
+    display: flex;
+    flex-direction: row;
+    background-color: var(--corbg2);
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    align-items: center;
+
 }
 
 .contato h1 {
     font-family: 'Dela Gothic One', cursive;
     font-size: 40px;
     margin: 0;
+    display: flex;
 }
 
 .contato-content {
     display: flex;
-    align-items: center;
-    flex-direction: row;
     width: 1100px;
-    height: 720px;
+    min-width: auto;
+    height: auto;
     background-color: var(--corbg1);
+    margin: 50px auto;
     border-radius: 20px;
-    margin: 50px 40px;
+}
+
+.contato-itens {
+    display: flex;
+    flex-direction: row;
 }
 
 .imagem-contato {
@@ -300,7 +390,6 @@ header ul li a:hover {
     background-image: url("assets/contato.jpg");
     background-size: cover;
     background-position: 40% 50%;
-    opacity: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -319,21 +408,146 @@ header ul li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .links a {
-    display: inline;
+    display: flex;
     width: 100px;
     height: 100%;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .links img {
-    display: inline;
+    display: flex;
     width: 40%;
     height: 100%;
     margin: 20px 0;
+}
+
+@media (max-width:1190px) {
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .block1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block1 h1 {
+        margin: 0;
+        text-align: left;
+        margin: 40px 180px 0 80px;
+
+    }
+
+    .block1 h3 {
+        margin: 0;
+        text-align: justify;
+        margin: 40px 80px;
+    }
+
+    .block2 {
+        width: 100%;
+        height: 500px;
+        background-position: 60% 1%;
+        background-size: cover;
+    }
+
+    .precos {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:1140px) {
+    .contato-itens {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--corbg2);
+        width: 100%;
+        min-width: auto;
+        height: auto;
+        align-items: center;
+    
+    }
+
+    .imagem-contato {
+        width: 550px;
+        height: 720px;
+        background-image: url("assets/contato.jpg");
+        background-size: cover;
+        background-position: 40% 50%;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .links-contato {
+        width: 550px;
+        height: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--corbg1);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    header {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: var(--corbg2);
+        height: 175px;
+    }
+
+    img {
+        display: flex;
+        width: 100px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header ul li {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 20px;
+        color: var(--cortexto);
+    }
+
+    header ul li a:hover {
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 20px;
+        color: var(--cortexto2);
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-top: 175px;
+    }
 }
